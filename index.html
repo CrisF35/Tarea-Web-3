@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingreso de Datos de Clientes</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2 class="title">Ingreso de Datos del Cliente</h2>
+  <form class="form" id="clienteForm">
+    <input class="input" placeholder="Nombre" type="text" id="nombre" name="nombre" required>
+
+    <input class="input" placeholder="Apellido" type="text" id="apellido" name="apellido" required>
+
+    <input class="input" placeholder="Email" type="email" id="correo" name="correo" required>
+
+    <input class="input" placeholder="Telefono" type="tel" id="telefono" name="telefono" required>
+
+    <div class="error" id="errorMsg"></div>
+
+    <button class="form-btn" type="submit">Guardar Cliente</button>
+  </form>
+</div>
+
+<script type="module" src="validaciones.js"></script>
+
+</body>
+</html>
