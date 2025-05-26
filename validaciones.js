@@ -14,6 +14,16 @@ document.getElementById('clienteForm').addEventListener('submit', function(event
       return;
     }
 
+    if (/\d/.test(nombre)) {
+      errorMsg.textContent = 'El nombre no debe contener números.';
+      return;
+    }
+
+    if (/\d/.test(apellido)) {
+      errorMsg.textContent = 'El apellido no debe contener números.';
+      return;
+    }
+
     if (!/^\S+@\S+\.\S+$/.test(correo)) {
       errorMsg.textContent = 'Por favor, introduce un correo válido.';
       return;
